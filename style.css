@@ -1,0 +1,348 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+ .background{
+          background-image: url(./photo/Project.jpg);
+          background-attachment: fixed;
+          height: 865px;
+          position: relative;
+          background-size: cover;     
+        }
+        nav{
+             position: sticky;
+        }
+.logo{
+    height: 745px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+.logo img{
+  width: 600px;
+  height: 600px;
+}
+.background-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .car-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .car {
+    position: absolute;
+    right: -450px; /* start offscreen right */
+    top: 70%;
+    transform: translateY(-70%);
+    width: 500px;
+    transition: right 2s ease-out, transform 0.2s ease-out;
+  }
+
+  .car.show {
+    right: 70%;
+    transform: translate(70%, -70%);
+  }
+  /* history */
+  .old img{
+    width: 100%;
+    height: 400px;
+}
+/* /history */
+
+  /* history car */
+  .reveal h3{
+  font-family:"Nova Square", sans-serif;
+  font-weight: 1000;
+  font-size: 60px;
+  letter-spacing: 20px;
+  display: flex;
+  justify-content:center;
+  white-space: nowrap;
+  margin-top: 90px;
+  position: relative;
+  margin-right: 20px;
+  }
+  .reveal img{
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 10px;
+    
+  }
+  .now {
+    object-fit: cover;
+    width: 120%;
+    position: relative;
+    top:10%;
+    
+  }
+.reveal{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 0.9s ease;
+}
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* /history car */
+
+  
+  .container-model{
+    width: 100% ;
+    height: 100% ;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+  }
+  .logo-animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .logo-animation img{
+    width: 60px;
+    height: 60px;
+    animation-name: logo-animation;
+    position: relative;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    filter: blur(1px);
+
+  }
+  @keyframes logo-animation{
+   0%   { left:0px; top:0px;}
+  25%  { left:1px; top:0px;}
+  50%  { left:1px; top:1px;}
+  75%  { left:0px; top:1px;}
+  100% { left:0px; top:0px;}
+}
+  .logo-animation img:hover{
+      transform: scale(1.1);
+          filter:none;
+
+  }
+ .model{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+ }
+ .model h3{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    opacity: 0;                  /* hidden first */
+    transition: 0.4s ease;
+    z-index: 2;
+ }
+ .img1{
+  width: 700px;
+  height: 400px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(213, 208, 208);
+
+ }
+ .img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: translateY(80px);
+    transition: 0.4s ease;
+}
+.img1:hover img {
+    transform: scale(1.05);
+    background-color: rgba(196, 9, 9, 0.806);
+        filter: none;
+
+}
+ .img1:hover h3 {
+    opacity: 1;                  /* show text */
+    color: rgb(255, 255, 255);
+}
+  .img2{
+  width: 650px;
+  height: 350px;
+  margin-top: 70px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(213, 208, 208);
+ }
+  .img2 img {
+    width: 120%;
+    height: 120%;
+    object-fit: contain;
+    transition: 0.4s ease;
+  }  
+  .img2:hover img {
+    transform: scale(1.05);
+    background-color: rgba(210, 83, 149, 0.563);
+}
+ .img2:hover h3 {
+    opacity: 1;                  /* show text */
+    color: rgb(255, 255, 255);
+}
+  .img3{
+  width: 650px;
+  height: 350px;
+  margin-top: -20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(213, 208, 208);
+ }
+   .img3 img {
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
+    transition: 0.4s ease;
+  }  
+  .img3:hover img {
+    transform: scale(1.05);
+    background-color: rgb(41, 124, 183);
+}
+ .img3:hover h3 {
+    opacity: 1;                  /* show text */
+    color: rgb(255, 255, 255);
+}
+ .img4{
+  width: 700px;
+  height: 400px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(213, 208, 208);
+ }
+ .img4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.4s ease;
+}
+.img4:hover {
+  opacity: 1;
+}
+.img4:hover img {
+  transform: scale(1.05);
+  background-color: rgba(220, 142, 24, 0.406); 
+
+}
+ .img4:hover h3 {
+    opacity: 1;                  /* show text */
+    color: rgb(255, 255, 255);     
+}
+.tire-section{
+    position:relative;
+    height:100px;
+    overflow:hidden;
+    cursor: pointer;
+}
+
+.tire{
+    position:absolute;
+    top:50%;
+    left:-300px;   /* start off screen left */
+    transform:translateY(-50%) rotate(0deg);
+    width:100px;
+    transition: left 2s ease, transform 3s ease;
+}
+
+/* When scroll arrives */
+.tire.show{
+    left:50%;
+    transform:translate(-50%, -50%) rotate(720deg);
+}
+.car-section{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:100px;
+}
+
+
+.car-box{
+  position:relative;
+  width:400px;
+  height:250px;
+  overflow:hidden;
+  border-radius:15px;
+  transition:all 0.4s ease;
+  cursor:pointer;
+}
+
+/* image */
+.car-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+}
+
+/* video */
+.car-box video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  opacity:0;
+  transition:0.3s;
+}
+
+/* text */
+.car-text{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height: 100%;
+  color:rgb(0, 0, 0);
+  opacity: 1;
+}
+
+/* HOVER EFFECT */
+.car-text:hover{
+  opacity: 0;
+}
+.car-box:hover{
+  width:450px;
+}
+
+/* play video */
+.car-box:hover video{
+  opacity:1;
+}
+
+/* hide photo when video shows */
+.car-box:hover img{
+  opacity:0;
+}
+
+/* shrink other boxes */
+.car-section:hover .car-box:not(:hover){
+  width:375px;
+}
+.footer {
+background-color: aqua;
+width: 100%;
+height: 200px;
+display: inline-flex;
+} 
