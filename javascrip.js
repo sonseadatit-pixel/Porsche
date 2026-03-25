@@ -12,6 +12,7 @@ fetch("footer.html")
     document.getElementById("footer").innerHTML = data;
 });
   // Header
+  
   const car = document.getElementById('car');
   const text = document.getElementById('text');
   const triggerPoint = 150; // pixels from top to trigger animation
